@@ -1,8 +1,33 @@
-# React + Vite
+# 포켓몬 도감 만들기 
+[🔗 포켓몬 도감](https://ayoung-j.github.io/pokemon-pokedex/)<br/><br/>
+포켓몬 리스트를 보여주고 추가, 삭제, 상세 정보를 확인할 수 있습니다.
+<br/><br/>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 프로젝트 구조
+📦pokemon-pokedex<br/>
+┣ 📂public<br/>
+┣ 📂src<br/>
+┃ ┣ 📂assets<br/>
+┃ ┃ ┗ 📂fonts<br/>
+┃ ┣ 📜App.jsx<br/>
+┃ ┗ 📜main.jsx<br/>
+┣ 📜index.html<br/>
+┣ 📜README.md<br/>
+┗ 📜vite.config.js
+<br/><br/>
 
-Currently, two official plugins are available:
+## 실행 방법
+```
+git clone https://github.com/ayoung-j/pokemon-pokedex.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+yarn dev
+```
+<br/>
+
+## 주요 기능
+- **랜딩 페이지** : "포켓몬 도감 시작하기" 버튼을 클릭하면 도감 페이지로 이동합니다.
+- **도감 페이지**
+    - 대시보드 : 선택한 6개의 포켓몬을 표시하고, 포켓몬을 선택 해제할 수 있습니다.
+    - 포켓몬 리스트 : 포켓몬 리스트를 보여주고, 각 포켓몬 카드를 클릭하면 대시보드에 추가할 수 있습니다.
+    - 포켓몬 카드 : 각 포켓몬의 이미지, 이름, 타입을 표시하고 '추가' 또는 '삭제' 버튼을 제공합니다.
+- **상세 페이지** : 개별 포켓몬 카드를 클릭하면 포켓몬의 상세 정보를 보여줍니다.
