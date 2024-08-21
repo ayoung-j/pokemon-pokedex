@@ -8,6 +8,7 @@ const VariablesStyle = createGlobalStyle`
     --yellow-color: #FFDF36;
     --green-color: #40DA62;
     --blue-color: #38A7EC;
+    --blue-darken1-color: #0090e9;
     --gray-lighten2-color:#f6f6f6;
     --gray-lighten1-color:#ccc;
     --gray-color:#666;
@@ -15,6 +16,8 @@ const VariablesStyle = createGlobalStyle`
     --gray-darken2-color:#111;
     --container-width: 1200px;
     --gutter: 12px;
+    --spacing: 12px;
+    --spacing-lg: 24px;
     --border-radius: 8px;
     --border-radius-sm: 4px;
 }

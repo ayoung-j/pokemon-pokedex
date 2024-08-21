@@ -6,6 +6,7 @@ html {
     font-family: var(--font-family);
     background-color: #ff5757;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 @media screen and (min-width: 0\0) {
     /* IE 9, IE 10, IE 11 */
@@ -47,6 +48,9 @@ button {
     font-family: var(--font-family);
 }
 a, button{
+    outline: none;
+    border: none;
+    cursor: pointer;
     transition: all ease 0.3s;
 }
 a{

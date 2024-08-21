@@ -50,7 +50,7 @@ const ContentsInner = styled.div`
     align-items: ${(props) => (props.$isHome ? "center" : "")};
     justify-content: ${(props) => (props.$isHome ? "center" : "")};
     margin: 0 auto;
-    padding: var(--gutter);
+    padding: var(--spacing-lg);
     max-width: calc(var(--container-width));
     background-color: ${(props) => (props.$isHome ? "var(--gray-color)" : "var(--gray-lighten2-color)")};
     border: 1px solid var(--gray-darken2-color);
