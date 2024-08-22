@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import ListContainer from "./ListContainer";
 import PokemonCard from "./PokemonCard";
 import EmptyCard from "./emptyCard";
+import { PokemonContext } from "../context/PokemonContext";
 
 const DashboardContainer = styled.div`
     display: block;
@@ -28,7 +29,8 @@ const EmptyText = styled.div`
     border-radius: var(--border-radius-sm);
 `;
 
-const Dashboard = ({ selectedPokemon, onRemovePokemon }) => {
+const Dashboard = () => {
+    const { selectedPokemon } = useContext(PokemonContext);
     const totalItems = 6;
     const displayedItems = selectedPokemon.slice(0, totalItems);
     const emptyItems = totalItems - selectedPokemon.length;
@@ -44,10 +46,10 @@ const Dashboard = ({ selectedPokemon, onRemovePokemon }) => {
                     {/* 선택된 포켓몬을 먼저 렌더링 */}
                     {displayedItems.map((pokemon) => (
                         <li key={`pokemon-${pokemon.id}`}>
-                            <PokemonCard pokemon={pokemon} onRemovePokemon={() => onRemovePokemon(pokemon)} isSelected={true} />
+                            <PokemonCard pokemon={pokemon} isSelected={true} />
                         </li>
                     ))}
-                    {/* 남은 슬롯에 EmptyCard를 렌더링 */}
+                    {/* 남은 공간에 EmptyCard를 렌더링 */}
                     {Array.from({ length: emptyItems }).map((item, index) => (
                         <li key={`empty-${index}`}>
                             <EmptyCard />

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { styled } from "styled-components";
-import VariablesStyle from "./styles/VariablesStyle";
+import VariablesStyle from "./styles/VariablesStyle.globals";
 import FontsStyle from "./styles/FontsStyle";
 import GlobalStyle from "./styles/GlobalStyle";
 import Router from "./shared/Router";
