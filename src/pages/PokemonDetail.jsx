@@ -1,8 +1,7 @@
-import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import MOCK_DATA from "../constants/mock";
-import Button, { ButtonStyle } from "../components/Button";
+import { ButtonStyle } from "../components/Button";
 import { useSearchParams } from "react-router-dom";
 
 const PokemonDetailStyle = styled.div`
@@ -54,8 +53,7 @@ const EmptyText = styled.div`
 `;
 
 const PokemonDetail = () => {
-    const [searchParams, setSearchParams] = useSearchParams();
-
+    const [searchParams] = useSearchParams();
     const navigate = useNavigate();
     const pokemonId = searchParams.get("id");
     const pokemon = MOCK_DATA.find((item) => item.id === Number(pokemonId));

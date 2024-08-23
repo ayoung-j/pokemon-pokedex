@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
 import styled from "styled-components";
 import ListContainer from "./ListContainer";
 import PokemonCard from "./PokemonCard";
 import EmptyCard from "./emptyCard";
-import { PokemonContext } from "../context/PokemonContext";
+import { useSelector } from "react-redux";
 
 const DashboardContainer = styled.div`
     display: block;
@@ -30,7 +29,7 @@ const EmptyText = styled.div`
 `;
 
 const Dashboard = () => {
-    const { selectedPokemon } = useContext(PokemonContext);
+    const selectedPokemon = useSelector((state) => state.selectedPokemon);
     const totalItems = 6;
     const displayedItems = selectedPokemon.slice(0, totalItems);
     const emptyItems = totalItems - selectedPokemon.length;

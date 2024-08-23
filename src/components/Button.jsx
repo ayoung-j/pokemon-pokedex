@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 export const ButtonStyle = styled.button.withConfig({
@@ -18,9 +17,9 @@ export const ButtonStyle = styled.button.withConfig({
         background-color: ${(props) => {
             if (props.bgColor === "var(--red-color)") {
                 return "var(--red-darken1-color)";
-            }else if(props.bgColor === "var(--blue-color)"){
+            } else if (props.bgColor === "var(--blue-color)") {
                 return "var(--blue-darken1-color)";
-            }else if(props.bgColor === "var(--gray-color)"){
+            } else if (props.bgColor === "var(--gray-color)") {
                 return "var(--gray-darken1-color)";
             }
         }};

@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
-import { PokemonContext } from "../context/PokemonContext";
+import MOCK_DATA from "../constants/mock";
 import ListContainer from "./ListContainer";
 import PokemonCard from "./PokemonCard";
 
 const PokemonList = () => {
-    const { pokemonList } = useContext(PokemonContext);
+    const pokemonList = MOCK_DATA;
 
     return (
         <>
@@ -13,7 +12,7 @@ const PokemonList = () => {
             ) : (
                 <ListContainer>
                     {pokemonList.map((pokemon) => (
-                        <li key={pokemon.id}>
+                        <li key={`list-${pokemon.id}`}>
                             <PokemonCard pokemon={pokemon} isSelected={false} />
                         </li>
                     ))}

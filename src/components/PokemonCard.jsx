@@ -1,9 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 import Card from "./Card";
 import Button from "./Button";
-import { useContext } from "react";
-import { PokemonContext } from "../context/PokemonContext";
+import { useDispatch } from "react-redux";
+import { addPokemon, removePokemon } from "../redux/slices/pokemonSlice";
 
 const CardTitle = styled.div`
     font-size: 1.6rem;
@@ -20,17 +19,17 @@ const ButtonWrap = styled.div`
 `;
 
 const PokemonCard = ({ pokemon, isSelected }) => {
-    const { onAddPokemon, onRemovePokemon } = useContext(PokemonContext);
     const { id, img_url, korean_name } = pokemon;
+    const dispatch = useDispatch();
 
     const handleOnClick = (e) => {
         e.stopPropagation(); // 부모의 클릭 이벤트 전파 방지
         e.preventDefault(); // 기본 링크 이동 동작 방지
 
         if (isSelected) {
-            onRemovePokemon(pokemon);
+            dispatch(removePokemon(pokemon));
         } else {
-            onAddPokemon(pokemon);
+            dispatch(addPokemon(pokemon));
         }
     };
 
