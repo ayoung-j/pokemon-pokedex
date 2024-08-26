@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import ListContainer from "./ListContainer";
 import PokemonCard from "./PokemonCard";
-import EmptyCard from "./emptyCard";
+import EmptyCard from "./EmptyCard";
 import { useSelector } from "react-redux";
 
 const DashboardContainer = styled.div`
