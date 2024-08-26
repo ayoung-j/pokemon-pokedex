@@ -1,5 +1,5 @@
 # 포켓몬 도감 만들기 
-[🔗 포켓몬 도감](https://ayoung-j.github.io/pokemon-pokedex/)<br/><br/>
+[🔗 포켓몬 도감](https://pokemon-pokedex-silk.vercel.app/)<br/>
 포켓몬 리스트를 보여주고 추가, 삭제, 상세 정보를 확인할 수 있습니다.
 <br/><br/>
 
