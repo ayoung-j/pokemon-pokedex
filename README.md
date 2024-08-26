@@ -6,14 +6,24 @@
 ## 프로젝트 구조
 📦pokemon-pokedex<br/>
 ┣ 📂public<br/>
-┣ 📂src<br/>
-┃ ┣ 📂assets<br/>
-┃ ┃ ┗ 📂fonts<br/>
-┃ ┣ 📜App.jsx<br/>
-┃ ┗ 📜main.jsx<br/>
-┣ 📜index.html<br/>
-┣ 📜README.md<br/>
-┗ 📜vite.config.js
+ ┃ ┗ 📂images<br/>
+ ┃ ┃ ┗ 📂favicon<br/>
+ ┣ 📂src<br/>
+ ┃ ┣ 📂assets<br/>
+ ┃ ┃ ┣ 📂fonts<br/>
+ ┃ ┃ ┗ 📂images<br/>
+ ┃ ┣ 📂components<br/>
+ ┃ ┣ 📂constants<br/>
+ ┃ ┣ 📂pages<br/>
+ ┃ ┣ 📂redux<br/>
+ ┃ ┃ ┣ 📂config<br/>
+ ┃ ┃ ┗ 📂slices<br/>
+ ┃ ┣ 📂shared<br/>
+ ┃ ┣ 📂styles<br/>
+ ┃ ┣ 📜App.jsx<br/>
+ ┃ ┗ 📜main.jsx<br/>
+ ┣ 📜index.html<br/>
+ ┗ 📜README.md
 <br/><br/>
 
 ## 실행 방법
