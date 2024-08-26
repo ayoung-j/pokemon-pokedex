@@ -1,5 +1,4 @@
-import React from "react";
-import Card, { CardStyle } from "./Card";
+import { CardStyle } from "./Card";
 import styled from "styled-components";
 
 const EmptyCardStyle = styled(CardStyle)`

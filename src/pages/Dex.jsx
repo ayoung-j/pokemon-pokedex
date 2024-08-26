@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MOCK_DATA from "../constants/mock";
 import Dashboard from "../components/Dashboard";
 import PokemonList from "../components/PokemonList";

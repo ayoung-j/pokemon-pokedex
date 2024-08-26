@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import styled from "styled-components";
 import ListContainer from "./ListContainer";
 import PokemonCard from "./PokemonCard";
