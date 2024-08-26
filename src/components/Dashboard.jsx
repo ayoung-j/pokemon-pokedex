@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import ListContainer from "./ListContainer";
 import PokemonCard from "./PokemonCard";
